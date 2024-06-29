@@ -1,0 +1,1100 @@
+/* shades of primary color */
+:root {
+    --clr-primary-1: #EFF6FF;
+    --clr-primary-2: #dbeafe;
+    --clr-primary-3: #bfdbfe;
+    --clr-primary-4: #93c5fd;
+    --clr-primary-5: #60a5fa;
+    --clr-primary-6: #3b82f6;
+    --clr-primary-7: #1d4ed8;
+    --clr-primary-8: #1e40af;
+    --clr-primary-9: #1e40af;
+    --clr-primary-10: #1e3a8a;
+    --clr-primary-11: #172554;
+}
+
+/* universal styling */
+* {
+     margin: 0; padding: 0; box-sizing: border-box;
+     color: #2F4F4F;
+     text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    color: var(--clr-primary-10);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    /* background-color: var(--clr-primary-1); */
+
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: solid 3px var(--clr-primary-10);
+    background-color: var(--clr-primary-2);
+}
+#bars {
+    display: none;
+}
+
+#registration, #project-database, #collaboration-tools, #resource-center {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: var(--clr-primary-2);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* header buttons */
+.btns{
+    position: relative;
+    width: 100%;
+}
+.btn:nth-of-type(1) {
+left: 360px;
+background-color: var(--clr-primary-10);
+}
+.btn:nth-of-type(2) {
+    background-color: var(--clr-primary-10);
+    z-index: 2;
+    border-radius: 20px;
+    right: 235px;
+}
+.btn:nth-of-type(3) {
+    background-color: var(--clr-primary-4);
+    color: grey;
+    font-weight: bold;
+    text-indent: 80px;
+    width: 200px;
+    right: 130px;
+    z-index: 1;
+    border-radius: 20px;
+}
+.btn:nth-of-type(3):hover{
+    background-color: var(--clr-primary-10);
+    color: white;
+    width: 120px;
+    text-indent: 5px;
+    font-weight: lighter;
+}
+.btn:nth-of-type(4) {
+    background-color: var(--clr-primary-10);
+    z-index: 2;
+    border-radius: 10px;
+    right: 85px;
+}
+.btn:nth-of-type(4):hover{
+    background-color: var(--clr-primary-10);
+    color: white;
+    width: 120px;
+    /* text-indent: 10px; */
+    font-weight: lighter;
+}
+.btn {
+    background-color: var(--clr-primary-9);
+    position: absolute;
+    color: white;
+    padding: 13px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 
+    scale 0.25s ease-in,
+    opacity 0.25s ease-in,
+    filter 0.25s ease-in;
+
+    &:hover {
+        scale: 1.2;
+    }
+}
+
+.btns:has(.btn:hover) .btn:not(:hover) {
+    scale: 0.8;
+    opacity: 0.8;
+    filter: blur(4px);
+}
+.span1{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.span1.exempt{
+    margin-left: 20px;
+}
+.span1 a:hover{
+    color: var(--clr-primary-10);
+}
+
+/* final year project section */
+#grad {
+    position: absolute;
+    top: 75px;
+    width: 400px;
+    height: 400px;
+}
+#gradd {
+    position: absolute;
+    top: 75px;
+    width: 400px;
+    height: 400px;
+}
+.grad {
+    position: relative;
+    width: 34%;
+    margin-left: 3px;
+}
+.gradText {
+    width: 66%;
+    height: 400px;
+    margin-left: 20px;
+}
+.gradText p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.gradText h1:nth-of-type(2){
+    border-top: solid #1e3a8a;
+    margin-top: 25px;
+    padding-top: 20px;
+    /* line-height: 20px; */
+}
+.gradText ul{
+    line-height: 30px;
+} 
+.gradText h1:nth-of-type(3){
+    border-top: solid #1e3a8a;
+    margin-top: 25px;
+    padding-top: 20px;
+}
+.needHelp{
+    text-align: center;
+    font-size: 20px;
+}
+.needHelp p{
+    font-size: 30px;
+    font-weight: bold;
+}
+#gradPhoto {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 30px;
+    border-bottom: solid 3px var(--clr-primary-10);
+    /* background-color: var(--clr-primary-2); */
+}
+
+/* blogPosts section starts here */
+.blogPosts{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: var(--clr-primary-11); */
+    background-color: white;
+    height: 85vh;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+#blogPic{
+    width: 40%;
+}
+.blogPic{
+    width: 100%;
+}
+.card{
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    /* background-color: red; */
+}
+.card:hover {
+    /* On mouse-over, add a deeper shadow */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.cont{
+    padding: 2px 16px;
+}
+
+/* blogPosts section ends here */
+
+/* Become a partner page */
+.btn-con, .btn-stu {
+    background-color: var(--clr-primary-10);
+    /* position: absolute; */
+    color: white;
+    padding: 11px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 
+    scale 0.25s ease-in,
+    opacity 0.25s ease-in,
+    filter 0.25s ease-in;
+
+    &:hover {
+        scale: 1.2;
+    }
+}
+.bap{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+}
+#stu{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    
+}
+.student{
+    margin-top: 30px;
+    text-align: center;
+    padding: 30px;
+    /* border: solid 3px var(--clr-primary-10); */
+    width: 30%;
+    height: 45vh;
+}
+.consultant{
+    margin-top: 30px;
+    text-align: center;
+    padding: 30px;
+    /* border: solid 3px var(--clr-primary-10); */
+    width: 30%;
+    height: 45vh;
+    margin-left: 30px;
+}
+#stp, #stp-1, #stp-2, #stp-3, #stp-4 {
+    margin-top: 10px;
+}
+/* Become a partner ends here */
+
+/* explore departments starts here */
+#dept {
+    /* background-color: var(--clr-primary-5); */
+    background-image: linear-gradient(95.54deg, #93c5fd 0.2%, #3b82f6 38.18%, #1e3a8a 94.08%);
+    height: 500px;
+}
+.departments {
+    display: flex;
+    /* justify-content: center; */
+    line-height: 40px;
+    justify-content: space-around ;
+    margin-top: 10px;
+}
+.departments a{
+    color: white;
+}
+.departments a:hover{
+    color: #2F4F4F;
+}
+.explore{
+    text-align: center;
+    padding-top: 10px;
+}
+/* explore departments ends here */
+
+/* footer starts here */
+footer{
+    height: 30vh;
+    letter-spacing: 3px;
+    position: relative;
+    border-top: solid 1px var(--clr-primary-9);
+}
+#abt {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+footer p {
+    margin-top: 20px;
+}
+/* footer ends here */
+
+/* each departments and their topics page starts here */
+.department{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#department{
+    text-align: center;
+    margin: 10px;
+    height: 140vh;
+}
+.acct{
+    background-color: var(--clr-primary-10);
+    padding: 20px;
+    color: white;
+    width: 900px;
+
+}
+td{
+    padding: 15px;
+    font-size: 13px;
+}
+table{
+    width: 100%;
+}
+.prevNext {
+    background-color: var(--clr-primary-3);
+    margin-top: 5px;
+    padding: 7px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+.prevNext:hover{
+    background-color: var(--clr-primary-10);
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 10s linear infinite;
+    padding: 10px;
+}
+
+@keyframes marquee {
+    0%   { text-indent: 100%; }
+    100% { text-indent: -100%; }
+}
+input{
+    padding: 13px;
+    margin: 8px;
+}
+#search{
+    position: absolute;
+    left: 280px;
+    top: 20px;
+    background-color: var(--clr-primary-10);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#search_here{
+    position: absolute;
+    top: 20px;
+    width: 60%;
+    background-color: var(--clr-primary-3);
+    border: none;
+    /* border: 3px #3b82f6; */
+}
+#search:hover{
+    background-color: var(--clr-primary-5);
+}
+#search_for_pro_top{
+    position: absolute;
+    left: 6px;
+    top: 5px;
+    padding-bottom: 20px;
+    /* margin-left: -130px; */
+}
+/* each departments and their topics page ends here */
+
+/* search for index page */
+.search_for_pro_top{
+    text-align: center;
+    
+}
+
+/* student page styling starts here */
+.user-icon{
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+.student{
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    line-height: 35px;
+    height: 60vh;
+}
+.consultant{
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    line-height: 35px;
+    height: 60vh;
+}
+/* student page styling ends here */
+
+/* consultant page styling starts here */
+#myPosts{
+    padding: 10px;
+    background-color: var(--clr-primary-9);
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+#myPosts:hover{
+background-color: var(--clr-primary-6);
+}
+/* consultant page ends here */
+
+/* consultant signup page starts here */
+.conReg{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    line-height: 35px;  
+}
+
+/* login page starts here */
+.btn-social{
+        
+    background-color: #5890FF;
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: aliceblue;
+}
+.btn-social:nth-child(2) {
+    background-color: #00acee;
+}
+
+.btn-social:nth-child(3){
+    background-color: #db4a39;
+}
+#userName{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--clr-primary-3);
+}
+#log-in{
+    background-color: var(--clr-primary-7);
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+#log-in:hover{
+    background-color: var(--clr-primary-11);
+}
+/* Login page ends here */
+
+/* hire a writer page starts here */
+.fill_form input{
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--clr-primary-3);
+}
+.fill_form label{
+    margin-left: 6px;
+}
+.fill_form{
+    margin-left: 45px;
+}
+.fill_form select{
+    margin-left: 6px;
+    width: 300px;
+    height: 40px;
+    background-color: var(--clr-primary-3);
+    border: none;
+    border-radius: 5px;
+}
+textarea{
+    background-color: var(--clr-primary-3);
+}
+.textArea input{
+    width: 300px;
+    background-color: #1e3a8a;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.textArea input:hover{
+    background-color: var(--clr-primary-6);
+    cursor: pointer;
+}
+
+/* for consultantSignup page */
+#searchh{
+    position: absolute;
+    right: 60px;
+    /* top: 20px; */
+    margin-top: 25px;
+    background-color: var(--clr-primary-10);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#search_heree{
+    position: absolute;
+    margin-top: 25px;
+    background-color: var(--clr-primary-3);
+    border: none;
+}
+#searchh:hover{
+    background-color: var(--clr-primary-5);
+}
+#search_for_pro_topp{
+    position: absolute;
+    padding-bottom: 20px;
+}
+.resp-form {
+    display: none;
+}
+
+
+/*..........................responsiveness for mobile phone screen...............................*/
+@media screen and (max-width: 600px) {
+        .bodi {
+            /* max-width: 100%; */
+            box-sizing: border-box;
+            overflow-x: hidden;
+            /* contain: content; */
+            /* margin: 0;
+            padding: 0; */
+        }
+        /* menu icon */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            right: 30px;
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color: white;
+            background-color: var(--clr-primary-10);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          
+          .dropdown-content a:hover {background-color: var(--clr-primary-6);}
+    
+    #bars {
+        position: relative;
+        display: flex;
+        padding: 10px;
+        width: 100%;
+        background-color: var(--clr-primary-5);
+        height: 10vh;
+        
+    }
+    .bars{
+        position: absolute;
+        background-color: var(--clr-primary-11);
+        display: block;
+        right: 30px;    
+    }
+
+    header {
+        display: none;
+    }
+    #gradPhoto {
+        display: grid;
+        height: 300vh; 
+    }
+    .grad {
+        /* background-color: #db4a39; */
+        width: 100%;
+        height: 90vh;
+        /* padding-left: 20px; */
+    }
+    #grad {
+        width: 100%;
+        margin-top: 10px;
+    }
+    #search {
+        /* position: absolute; */
+        left: 350px;
+        /* width: 20%; */
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .gradText {
+        width: 100%;
+        margin-top: -600px;
+        /* height: 400px; */
+        /* margin-left: 20px; */
+    }
+    
+    .search_for_pro_top {
+        /* background-color: #2F4F4F; */
+        width: 100%;
+        font-size: 20px;
+        padding-right: 195px;
+        /* right: 10px; */
+        /* padding-left: 120px; */
+        /* background-color: #1d4ed8; */
+    }
+    #search_here {
+        width: 60%;
+    }
+    
+    /* explore research materials section */
+    #dept {
+        /* display: grid; */
+        margin-top: -440px;
+        height: 200vh;
+    }
+    .departments {
+        display: grid;
+    }
+    li {
+        list-style-type: none;
+    }
+    /* blog section */
+    .blogPosts {
+        display: grid;
+        height: 105vh;
+    }
+    #blogPic {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+    }
+    /* login page reponsiveness */
+    #logImg2 {
+        width: 100%;
+    }
+    .logImg {
+        display: none;
+    }
+
+    .container-form {
+        width: 100% !important;
+        padding: 30px;
+    }
+
+    /* hire a writer page*/
+    .bodi {
+        height: 170vh;
+    }
+    .hireImg {
+        display: none;
+    }
+    #dept {
+        display: none;
+    }
+    .hireWriter {
+        width: 100% !important;
+    }
+     .hire-form {
+        /* width: 100% !important; */
+        display: grid !important;
+        height: 150vh !important;
+        text-align: center;
+     }
+     .dly {
+        height: 120vh !important;
+     }
+     #fill-the-form {
+        width: 100%;
+        /* background-color: red; */
+        text-align: center;
+     }
+     footer {
+        display: none;
+     }
+
+     /* for consultant signup page */
+     .cons-up {
+        display: none;
+     }
+
+     /*.................... department.html page .....................*/
+
+     #bodii {
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        contain: content;
+     }
+     
+     #acctPro {
+        margin-top: 430px;
+        width: 100%;
+     }
+     .acct {
+        width: 100%;
+     }
+     #acctPro1 {
+        height: 70vh;
+        width: 100%;
+        /* background-color: red; */
+     }
+     #gradd {
+        width: 100%;
+        margin-top: 50px;
+        display: grid;
+        padding-bottom: 130px;
+     }
+     .search-h {
+        width: 100%;
+        left: 5px;
+     }
+     #registrationForm {
+        display: none;
+     }
+     .resp-form {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+     }
+     .create-con {
+        text-align: center;
+     }
+     
+}
+/*...........................responsiveness for tablet size screen.......................................... */
+@media screen and (max-width: 900px) and (min-width: 601px) {
+    .bodi {
+        /* background-color: red; */
+        box-sizing: border-box;
+        overflow-x: hidden;
+        width: 100%;
+        /* height: 80vh; */
+    }
+    header {
+        display: none;
+    }
+    /* menu icon */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 20px;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: white;
+        background-color: var(--clr-primary-10);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: var(--clr-primary-6);}
+    #bars {
+        position: relative;
+        display: flex;
+        padding: 10px;
+        width: 100%;
+        background-color: var(--clr-primary-5);
+        height: 10vh;
+    }
+    .bars{
+        position: absolute;
+        background-color: var(--clr-primary-11);
+        display: block;
+        right: 30px;
+        top: 20px; 
+    }
+    #gradPhoto {
+        display: grid;
+        position: relative;
+        height: 370vh;
+    }
+    .grad {
+        /* background-color: #db4a39; */
+        width: 100%;
+        height: 90vh;
+        /* padding-left: 20px; */
+    }
+    #grad {
+        width: 100%;
+        margin-top: 10px;
+    }
+    #search {
+        /* position: absolute; */
+        left: 500px;
+    }
+    .gradText {
+        position: absolute;
+        width: 100%;
+        top: 500px;
+        /* margin-top: -850px; */
+    }
+    #dept {
+        /* display: grid; */
+        /* margin-top: -870px; */
+        width: 100%;
+        position: absolute;
+        top: 1290px;
+        height: 85vh;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    .blogPosts {
+        display: grid;
+        /* margin-top: -50px; */
+        height: 105vh;
+    }
+    #blogPic {
+        width: 100%;
+        /* margin-top: -32px; */
+    }
+    .card {
+        width: 100%;
+        height: 25vh;
+    }
+    /* login page reponsiveness */
+    #logImg2 {
+        width: 100%;
+    }
+    .logImg {
+        display: none;
+    }
+
+    .container-form {
+        width: 100% !important;
+        padding: 30px;
+    }
+    /* hire a writer page*/
+    .bodi {
+        height: 170vh;
+    }
+    .hireImg {
+        display: none;
+    }
+    #dept {
+        display: none;
+    }
+    .hireWriter {
+        width: 100% !important;
+    }
+     .hire-form {
+        /* width: 100% !important; */
+        display: grid !important;
+        height: 150vh !important;
+        text-align: center;
+        /* height: 100vh; */
+     }
+     .dly {
+        height: 120vh !important;
+     }
+     #fill-the-form {
+        width: 100%;
+        /* background-color: red; */
+        text-align: center;
+     }
+     footer  {
+        display: none;
+     }
+     .textArea {
+        /* justify-content: center; */
+        width: 100%;
+        padding: 200px;
+     }
+
+          /*.................... department.html page .....................*/
+
+          #bodii {
+            max-width: 100%;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            contain: content;
+         }
+         
+         #acctPro {
+            margin-top: 430px;
+            width: 100%;
+         }
+         .acct {
+            width: 100%;
+         }
+         #acctPro1 {
+            height: 70vh;
+            width: 100%;
+            /* background-color: red; */
+         }
+         #gradd {
+            width: 100%;
+            margin-top: 50px;
+            display: grid;
+            padding-bottom: 130px;
+         }
+         .search-h {
+            width: 100%;
+            left: 5px;
+         }
+
+         /* consultant page */
+         .cons-up {
+            display: none;
+         }
+         #registrationForm {
+            display: none;
+         }
+         .resp-form {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+         }
+         .create-con {
+            text-align: center;
+         }
+    
+     
+}
+
+/* .........................responsiveness between tablet and laptop size screens */
+@media screen and (max-width: 1281px) and (min-width: 901px) {
+    .bodi {
+        /* background-color: green; */
+        background-color: var(--clr-primary-2);
+        box-sizing: border-box;
+        overflow-x: hidden;
+        width: 100%;
+        height: 350vh;
+    }
+    /* menu icon */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 20px;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: white;
+        background-color: var(--clr-primary-10);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: var(--clr-primary-6);}
+    .btns {
+        display: none;
+    }
+    #bars {
+        display: block;
+        position: relative;
+        height: 10vh;
+        padding: 10px;
+        background-color: white;
+    }
+    .bars {
+        position: absolute;
+        right: 10px;
+        top: 12px;
+        background-color: var(--clr-primary-10);
+    }
+    #gradPhoto {
+        width: 100%;
+        height: 130vh;
+    }
+    .grad {
+        width: 55%;
+    }
+    .gradText {
+        width: 45%;
+    }
+    #search_here {
+        background-color: var(--clr-primary-2);
+    }
+    /* hire a writer page*/
+    .bodi {
+        height: 170vh;
+    }
+    .hireImg {
+        display: none;
+    }
+    #dept {
+        display: none;
+    }
+    .hireWriter {
+        width: 100% !important;
+    }
+     .hire-form {
+        /* width: 100% !important; */
+        display: grid !important;
+        height: 150vh !important;
+        text-align: center;
+        /* height: 100vh; */
+     }
+     .dly {
+        height: 120vh !important;
+     }
+     #fill-the-form {
+        width: 100%;
+        /* background-color: red; */
+        text-align: center;
+     }
+     footer  {
+        display: none;
+     }
+     .textArea {
+        /* justify-content: center; */
+        width: 100%;
+        padding: 200px;
+     }
+
+          /*.................... department.html page .....................*/
+
+          #bodii {
+            max-width: 100%;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            contain: content;
+         }
+         
+         #acctPro {
+            margin-top: 430px;
+            width: 100%;
+         }
+         .acct {
+            width: 100%;
+         }
+         #acctPro1 {
+            height: 70vh;
+            width: 100%;
+            /* background-color: red; */
+         }
+         #gradd {
+            width: 100%;
+            margin-top: 50px;
+            display: grid;
+            padding-bottom: 130px;
+         }
+         .search-h {
+            width: 100%;
+            left: 5px;
+         }
+          /* consultant page */
+          .cons-up {
+            display: none;
+         }
+}

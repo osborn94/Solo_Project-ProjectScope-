@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Sign up Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bodi">
+    <header>
+        <div class="btns">
+            <button class="btn" onclick="home()">Home</button>         
+            <span class="span1"><a href="#">Project Topics</a></span> 
+            <span class="span1"><a href="#">Blog</a></span>
+            <span class="span1"><a href="#">Faq</a></span> 
+            <span class="span1"><a href="#">Contact Us</a></span> 
+            <button class="btn" onclick="regPage()">Become a Partner</button>  
+            <button class="btn" onclick="loginPage()">Hire a Writer</button>
+            <button class="btn" onclick="logIn() ">Log in</button>    
+        </div>
+    </header>
+
+    <!-- responsiveness nav block -->
+    <div id="bars">
+        <div><h1>ProjectScope</h1></div>
+        <div class="bars">
+        <!-- <i class="fa-solid fa-bars" onclick="faBars()" style="color: white;padding: 4px;"></i> -->
+        <div id="menuIcon" style="font-size:30px;cursor:pointer;color: white;">☰</div>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#">Home</a>
+            <a href="becomePartner.html">Become a Partner</a>
+            <a href="hireWriter.html">Hire a Writer</a>
+            <a href="">Project Topics</a>
+            <a href="">Blogs</a>
+            <a href="">Faq</a>
+            <a href="#">Contact Us</a>
+            <a href="login.html">Log in</a>
+          </div>
+        </div>
+    </div>
+    
+<!-- responsiveness nav block ends here -->
+
+    <div class="marquee" style="animation: marquee 20s linear infinite;">
+        <h2>Fill the form below to become a Student Partner</h2>
+    </div>
+    <div style="display: flex;justify-content: space-around;height: 100vh;">
+        <div>
+            <div class="create-con">
+                <h3>CREATE a STUDENT ACCOUNT</h3>
+                <p>Explore free project materials when you become a student partner</p><hr>
+            </div>
+            <div class="fill_form conReg">
+    <form id="registrationForm">
+        <div style="display: flex;">
+        <div>
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Create Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+    </div>
+    <div>
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="confirmPassword">Confirm Password:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br> 
+    </div>
+</div>
+        <label for="education">Educational Level:</label><br>
+        <select id="education" name="education" required>
+        <option value="BSC">BSC</option>
+        <option value="HND">HND</option>
+        <option value="OND/NCE">OND/NCE</option>
+        <option value="MSc/MBA/PGD">MSc/MBA/PGD</option>
+        </select><br>
+        <input type="checkbox" id="agreeTerms" name="agreeTerms" required style="width: 30px;">
+        <label for="agreeTerms">I agree to the terms and conditions</label>
+        <input type="submit" value="Create Your Account" style="background-color: #1e3a8a;color: white; margin-left: 18px;cursor: pointer;">
+    </form>
+    <!-- responsive form -->
+    <form class="resp-form">
+        <div>
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Create Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="confirmPassword">Confirm Password:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br> 
+    </div>
+
+        <label for="cv">Submit CV:</label><br>
+        <input type="file" id="cv" name="cv"><br>
+        <input type="checkbox" id="agreeTerms" name="agreeTerms" required style="width: 30px;">
+        <label for="agreeTerms">I agree to the terms and conditions</label>
+        <input type="submit" value="Create Your Account" style="background-color: #1e3a8a;color: white; margin-left: 18px;">
+    </form>
+     <!-- responsive form ends here -->
+    <p style="text-align: center;">Already have an account? <a href="login.html" style="font-weight: bold;color: #1e3a8a;">Log in</a></p>
+    </div>
+        </div>
+        
+        <div class="cons-up" style="width: 30%;">
+            <h3 class="search_for_pro_top" id="search_for_pro_topp">Search for your project topic</h3>
+            <form action="#">
+                <input style="width: 20%;" id="search_heree" type="text" id="fname" name="fname" placeholder="Search here...">
+                <input id="searchh" type="submit" value="Search">
+              </form>
+            <img src="/images/consultant.jpg" alt="" style="width: 400px;height: 400px;margin-top: 70px;">
+        </div>
+    </div>
+
+
+<!-- footer section -->
+    <footer>
+        <div id="abt">
+       
+            <a href="#" style="text-decoration: none;">Home</a><span class="abt1">|</span>
+            <a href="#" style="text-decoration: none;">About</a><span class="abt1">|</span>
+            <a href="#" style="text-decoration: none;">Hire a writer</a><span class="abt1">|</span>
+            <a href="#" style="text-decoration: none;">Terms</a><span class="abt1">|</span>
+            <a href="#" style="text-decoration: none;">Become a partner</a><span class="abt1">|</span>
+            <a href="#" style="text-decoration: none;">Project topics</a><span class="abt1">|</span>
+            <a href="#" style="text-decoration: none;">Faq</a><span class="abt1">|</span>
+            <a href="#" style="text-decoration: none;">Contact Us</a><span class="abt1">|</span>
+    
+          </div>
+    
+          <hr>
+    
+        <p>© 2024 ProjectScope</p>
+    </footer>
+    <!-- <script src="main.js"></script> -->
+    <script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+      
+        var password = document.getElementById('password').value;
+        var confirmPassword = document.getElementById('confirmPassword').value;
+      
+        if (password !== confirmPassword) {
+            alert('Passwords do not match!');
+            return false;
+        }
+      
+        if (!document.getElementById('agreeTerms').checked) {
+            alert('You must agree to the terms and conditions!');
+            return false;
+        }
+
+        if (!document.getElementById('cv').value) {
+            alert('kindly upload a cv or any complete research work done by you, thanks!');
+            return false;
+        }
+      
+        alert('Form submitted successfully!');
+        return true;
+      });
+         // menu icon
+document.getElementById("menuIcon").onclick = function() {
+  document.getElementById("myDropdown").style.display = 
+    document.getElementById("myDropdown").style.display === "none" ? "block" : "none";
+}
+      </script>
+      </div>
+</body>
+</html>
