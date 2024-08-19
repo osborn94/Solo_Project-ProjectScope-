@@ -35,16 +35,17 @@ a:hover {
 header {
     width: 100%;
     height: 100vh;
-    background-image: url('college-student-with-curly-hair-bristle-looking-concentrated-while-reading-something-important-book-holding-pen-chin-hard-working-man-being-involved-studying-working-hard-all-day.jpg');
+    background-image: url('college-student-with-curly-hair-bristle-looking-concentrated-while-reading-something-important-book-holding-pen-chin-hard-working-man-being-involved-studying-working-hard-all-day\ \(2\).jpg');
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    align-items: center;
     justify-content: center;
   }
   .header-content {
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
     /* color: whitesmoke; */
     /* color: black; */
     text-align: center;
@@ -245,7 +246,7 @@ section{
       height: 100vh;
       justify-content: center;
       /* background: var(--clr-primary-3); */
-      background: grey;
+      background: var(--clr-primary-3);
       margin-top: -900px;
       transition: all 0.5s ease;
     }
@@ -279,7 +280,7 @@ section{
       .blog{
         width: 100%;
         height: 50vh;
-        background-image: url('old-fashioned-flat-lay-with-stack-antique-leather-bound-books-against-dark-wall-literature-reading-education-concept-retro-vintage-style-copyspace-your-ad-antique-archive.jpg');
+        background-image: url('old-fashioned-flat-lay-with-stack-antique-leather-bound-books-against-dark-wall-literature-reading-education-concept-retro-vintage-style-copyspace-your-ad-antique-archive\ \(1\).jpg');
         background-position: center bottom;
         background-size: cover;
         background-repeat: no-repeat;
