@@ -3,71 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjectScope</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>New Home Page</title>
+    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/bd5ea8837d.js" crossorigin="anonymous"></script>
-    
 </head>
 <body>
-    <div class="bodi">
-    <header>
-        <div>
-        <h1>Welcome to ProjectScope</h1>
-        <p>An innovative online platform for managing research projects</p>
-    </div>
-        <div class="btns">
-            <button class="btn hme" onclick="home()">Home</button>
-            <span class="span1"><a href="#">Project Topics</a></span>
-            <span class="span1"><a href="#">Blog</a></span>
-            <span class="span1"><a href="#">Faq</a></span> 
-            <span class="span1"><a href="#">Contact Us</a></span> 
-            <button class="btn " onclick="regPage()">Become a Partner</button>  
-            <button class="btn" onclick="hireWriter()">Hire a Writer</button>       
-            <button class="btn" onclick="logIn()">Log in</button>
-        </div>
-    </header>
-
-    <!-- responsiveness nav block -->
-    <div id="bars">
-        <div><h1>ProjectScope</h1></div>
-        <div class="bars">
-        <!-- <i class="fa-solid fa-bars" onclick="faBars()" style="color: white;padding: 4px;"></i> -->
-        <div id="menuIcon" style="font-size:30px;cursor:pointer;color: white;">☰</div>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="#">Home</a>
-            <a href="becomePartner.html">Become a Partner</a>
-            <a href="hireWriter.html">Hire a Writer</a>
-            <a href="">Project Topics</a>
-            <a href="">Blogs</a>
-            <a href="">Faq</a>
-            <a href="#">Contact Us</a>
-            <a href="login.html">Log in</a>
-          </div>
-        </div>
-    </div>
-    
-<!-- responsiveness nav block ends here -->
-
-    <section id="gradPhoto">
-        <div class="grad">
-            <h3 class="search_for_pro_top" id="search_for_pro_top">Search for your project topic</h3>
-            
+    <nav class="navbar">
+        <h1><div class="video-logo">
+          <video autoplay muted>
+            <source src="ProjectScope_VideoLogo.mp4" type="video/mp4">
+          </video>
+        </div></h1>
+        <ul class="nav-links">
+          <li><a class="active" href="indes.html">Home</a></li>
+          <li><a class="nav-anchor" href="#">Project Topics</a></li>
+          <li><a class="nav-anchor" href="#" onclick="scrollToClass('blog')">Blog</a></li>
+          <li><a class="nav-anchor" href="#">Faq</a></li>
+          <li><a class="nav-anchor" href="#">Contact Us</a></li>
+          <li><a class="nav-anchor" href="becomePartner.html">Become a Partner</a></li>
+          <li><a class="nav-anchor" href="hireWriter.html">Hire a Writer</a></li>
+          <li><a class="lnm" href="login.html">Log in</a></li>
+        </ul>
+        <div class="menuIcon" style="font-size:30px;cursor:pointer">☰</div>
+  </nav>
+  <header>
+        <div class="header-content">
+            <h1>Welcome To ProjectScope</h1>
+            <div class="line"></div>
+            <h2>Innovative Online Platform For Managing Research Projects</h2>
+            <h3>Search for your project topic:</h3>
             <form action="#">
                 <input id="search_here" type="text" id="fname" name="fname" placeholder="Search here...">
-                <input id="search" type="submit" value="Search">
+                <input class="lnm" id="search" type="submit" value="Search">
             </form>
-        
-            <img id="grad" src="graduate.jpg" alt="grad picture">
         </div>
-        <div class="gradText">
-            <h1>RESEARCH MATERIALS AND PROJECT TOPICS FOR UNDERGRADUATES</h1>  
-            <table style="margin-bottom: 20px;">     
-            <p>Discover comprehensive <b><a href="#">research materials</a></b> and <b><a>project topics</a></b> for every academic level and discipline.
-             We offer academic writing services for 
-             projects, research analyses, term papers, theses, proposals, dissertations, journals, assignments, and more.
-            </p>
-            </table><hr>
-            <h1>HOW TO TALK TO A RESEARCH CONSULTANT/ DATA ANALYST</h1>
+  </header>
+  <!-- Reasearch Materials and Project Topics section -->
+   <section class="research">
+        <h1>RESEARCH MATERIALS AND PROJECT TOPICS FOR UNDERGRADUATES</h1>
+        <div class="line-two"></div>
+            <table>   
+                <p>Discover comprehensive <b><a href="#">research materials</a></b> and <b><a href="#">project topics</a></b> for every academic level and discipline.
+                    We offer academic writing services for 
+                    projects, research analyses, term papers, theses, proposals, dissertations, journals, assignments, and more.
+                </p>
+            </table>
+            <hr>
+        <h1>HOW TO TALK TO A RESEARCH CONSULTANT/ DATA ANALYST</h1>
+        <div class="line-two"></div>
             <table style="margin-bottom: 20px;">
                 <ul>
                     <li>First register to become a student partner</li>
@@ -77,83 +60,80 @@
                 </ul>
             </table><hr>
             <span class="needHelp">
-            <h1 style="margin-top: 20px; color: #1e3a8a;">NEED HELP? CHAT WITH US!</h1>
-            <p><a href="https://wa.me/2348083193505">+234 808 319 3505</a></p>
-            <p><a href="https://wa.me/2348083193505">+234 808 319 3505</a></p>
-            </span><hr style="margin-top: 20px;">
+                <h1>NEED HELP? CHAT WITH US!</h1>
+                <h3><a href="https://wa.me/2348083193505">+234 808 319 3505</a></h3>
+                <h3><a href="https://wa.me/2348083193505">+234 808 319 3505</a></h3>
+            </span>
+   </section>
+   <!-- ======Explore Project Materials Section -->
+    <section class="explore">
+        <div class="header-content-two">
+            <h1>Explore project materials by departments</h1>
+            <div class="line"></div>
         </div>
-    </section>
-
-    <section id="dept">
-        <div class="explore" id="">
-            <h1 class="">Explore project materials by departments</h1>
-    
-            <div class="departments">
-                
-                <div class="" id="">
-                    <ul>
-                        <li><a class="" href="department.html">Accounting</a></li>
-                        <li><a class="" href="">Adult Education</a></li>
-                        <li><a class="" href="">Agricultural Science</a></li>
-                        <li><a class="" href="">Banking and Finance</a></li>
-                        <li><a class="" href="">Biochemistry</a></li>
-                        <li><a class="" href="">Business Administration</a></li>
-                        <li><a class="" href="">Computer Science</a></li>
-                        <li><a class="" href="department.html">Chemical Engineering</a></li>
-                        <li><a class="" href="">Chemistry</a></li>
-                    </ul>
-                </div>
-                
-                <div class="">
-                    <ul>
-                        <li><a class="" href="">Economics</a></li>
-                        <li><a class="" href="">Electrical & Electronics Engineering</a></li>
-                        <li><a class="" href="">English</a></li>
-                        <li><a class="" href="">Food Engineering</a></li>
-                        <li><a class="" href="">Geography</a></li>
-                        <li><a class="" href="">Geology</a></li>
-                        <li><a class="" href="">Human Kinetics</a></li>
-                        <li><a class="" href="">Industrial Chemistry</a></li>
-                        <li><a class="" href="">International Relations</a></li>
-                    </ul>
-                </div>
-                
-                <div class="">
-                    <ul>
-                        <li><a class="" href="">Law</a></li>
-                        <li><a class="" href="">Mass Communication</a></li>
-                        <li><a class="" href="">Micro Biology</a></li>
-                        <li><a class="" href="">Mathematics</a></li>
-                        <li><a class="" href="">Mechanical Engineering</a></li>
-                        <li><a class="" href="">Marine & Transport</a></li>
-                        <li><a class="" href="">Nursing</a></li>
-                        <li><a class="" href="">Political Science</a></li>
-                        <p><a href="#">More...</a></p>
-
-                    </ul>
-                </div>
+        <div class="row">
+            <div class="col first-col">
+                <ul>
+                    <li><a class="#" href="department.html">Accounting</a></li>
+                    <li><a class="#" href="">Adult Education</a></li>
+                    <li><a class="#" href="">Agricultural Science</a></li>
+                    <li><a class="#" href="">Banking and Finance</a></li>
+                    <li><a class="#" href="">Biochemistry</a></li>
+                    <li><a class="#" href="">Business Administration</a></li>
+                    <li><a class="#" href="">Computer Science</a></li>
+                    <li><a class="#" href="department.html">Chemical Engineering</a></li>
+                    <li><a class="#" href="">Chemistry</a></li>
+                </ul>
             </div>
-          </div>
+            <div class="col">
+                <ul>
+                    <li><a class="" href="">Economics</a></li>
+                    <li><a class="" href="">Electrical & Electronics Engineering</a></li>
+                    <li><a class="" href="">English</a></li>
+                    <li><a class="" href="">Food Engineering</a></li>
+                    <li><a class="" href="">Geography</a></li>
+                    <li><a class="" href="">Geology</a></li>
+                    <li><a class="" href="">Human Kinetics</a></li>
+                    <li><a class="" href="">Industrial Chemistry</a></li>
+                    <li><a class="" href="">International Relations</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><a class="" href="">Law</a></li>
+                    <li><a class="" href="">Mass Communication</a></li>
+                    <li><a class="" href="">Micro Biology</a></li>
+                    <li><a class="" href="">Mathematics</a></li>
+                    <li><a class="" href="">Mechanical Engineering</a></li>
+                    <li><a class="" href="">Marine & Transport</a></li>
+                    <li><a class="" href="">Nursing</a></li>
+                    <li><a class="" href="">Political Science</a></li>
+                    <p><a href="#">More...</a></p>
 
-    </section>
-<!-- blog post section -->
-    <section class="blogPosts">
-        <div id="blogPic"><img src="blog.jpg" class="blogPic" alt="blog-post"></div>
-        <div class="card">       
-                <h1 style="text-align: center;">BLOG POSTS</h1>
-                <div class="cont">
-              <h5 class="card-title">Topic</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi enim neque deleniti, 
-                exercitationem repellendus, tenetur saepe esse, nulla fugit ea laudantium. 
-                Exercitationem, blanditiis fugiat odio quaerat necessitatibus voluptate natus enim.</p>
-              <a href="#">>Read more</a>
-                </div>  
+                </ul>
+            </div>
         </div>
     </section>
-
-     <footer>
-        <div id="abt">
-       
+     <!-- Blog Post Section -->
+    <section class="blog">
+        <div class="blogPic"><img src="blog.jpg" class="blogPic" alt="blog-post"></div>
+        <div class="card">       
+            <h1 style="text-align: center;">BLOG POSTS</h1>
+            <div class="cont">
+                <h5 class="card-title">Topic</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi enim neque deleniti, 
+                    exercitationem repellendus, tenetur saepe esse, nulla fugit ea laudantium. 
+                    Exercitationem, blanditiis fugiat odio quaerat necessitatibus voluptate natus enim.
+                </p>
+                <a href="#">>Read more</a>
+            </div>  
+        </div>
+    </section>
+    <!-- =====Footer Section===== -->
+    <section class="footer">
+        <div class="footer-line"></div>
+        <p>Copyright infringement is not allowed here</p>
+        <div>
             <a href="#" style="text-decoration: none;">Home</a><span class="abt1">|</span>
             <a href="#" style="text-decoration: none;">About</a><span class="abt1">|</span>
             <a href="#" style="text-decoration: none;">Hire a writer</a><span class="abt1">|</span>
@@ -163,14 +143,17 @@
             <a href="#" style="text-decoration: none;">Faq</a><span class="abt1">|</span>
             <a href="#" style="text-decoration: none;">Contact Us</a><span class="abt1">|</span>
     
-          </div>
-    
-          <hr>
-    
+        </div>
+        <hr>
+        <a href="https://www.freepik.com/free-photo/education-day-arrangement-with-graduation-cap_10752867.htm#fromView=search&page=1&position=40&uuid=89e3f4a9-6bf0-48b1-890e-e025e7b9c143">Image by freepik</a>
         <p>© 2024 ProjectScope</p>
-    </footer>
+        <p>OSBORN ISRAEL</p>
+        
+    </section>
 
-    <script src="main.js"></script>
-</div>
+
+
+
+    <script src="index.js"></script>
 </body>
 </html>
