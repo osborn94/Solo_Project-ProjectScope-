@@ -271,6 +271,7 @@ section{
       .first-col{
         margin-top: 50px;
       }
+      
       /* Blog Section */
       .blogPic{
         display: none;
@@ -291,4 +292,9 @@ section{
         position: absolute;
         top: 0;
       }
+}
+@media only screen and (max-width:425px){
+.first-col{
+  margin-top: 80px;
+}
 }
