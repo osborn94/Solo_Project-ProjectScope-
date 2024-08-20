@@ -11,3 +11,10 @@ function scrollToClass(className) {
         element.scrollIntoView({ behavior: 'smooth' });
     }
 }
+// scroll to Blog section
+function scrollToClass(className) {
+    const element = document.querySelector(`.${className}`);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
