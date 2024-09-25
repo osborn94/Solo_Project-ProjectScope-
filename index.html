@@ -3,157 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Home Page</title>
-    <link rel="stylesheet" href="index.css">
+    <title>New ProjectScope</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/bd5ea8837d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar">
-        <h1><div class="video-logo">
-          <video autoplay muted>
-            <source src="ProjectScope_VideoLogo.mp4" type="video/mp4">
-          </video>
-        </div></h1>
+        <h1 class="logo"><span class="logo-text">Project<span class="scope">Scope</span></span></h1>
         <ul class="nav-links">
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a class="nav-anchor" href="#" onclick="scrollToClass('row')">Project Topics</a></li>
-          <li><a class="nav-anchor" href="#" onclick="scrollToClass('blog')">Blog</a></li>
-          <li><a class="nav-anchor" href="#">Faq</a></li>
-          <li><a class="nav-anchor" href="https://wa.me/2348083193505">Contact Us</a></li>
-          <li><a class="nav-anchor" href="becomePartner.html">Become a Partner</a></li>
-          <li><a class="nav-anchor" href="hireWriter.html">Hire a Writer</a></li>
-          <li><a class="lnm" href="login.html">Log in</a></li>
+            <li><a class="active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a class="nav-anchor" href="#" onclick="scrollToClass('explore-pro')"><i class="fa-solid fa-book"></i> Project Topics</a></li>
+            <li><a class="nav-anchor" href="#" onclick="scrollToClass('blog-container')"><i class="fa-solid fa-comment fa-rotate-270"></i> Blog</a></li>
+            <li><a class="nav-anchor" href="#" onclick="scrollToClass('faq')"><i class="fa-solid fa-question"></i> FAQs</a></li>
+            <li><a class="nav-anchor" href="#" onclick="scrollToClass ('nid-hep')"><i class="fa-solid fa-address-book"></i> Contact Us</a></li>
+            <li><a class="nav-anchor" href="becomePartner.html"><i class="fa-solid fa-handshake"></i> Become a Partner</a></li>
+            <li><a class="nav-anchor" href="hire_writer.html"><i class="fa-solid fa-pen-to-square"></i> Hire a Writer</a></li>
+            <li><a class="login-btn" href="login.html">Log in</a></li>
         </ul>
-        <div class="menuIcon" style="font-size:30px;cursor:pointer">☰</div>
-  </nav>
-  <header>
-        <div class="header-content">
-            <h1>Welcome To ProjectScope</h1>
-            <div class="line"></div>
-            <h2>Innovative Online Platform For Managing Research Projects</h2>
-            <h3>Search for your project topic:</h3>
-            <form action="#">
-                <input id="search_here" type="text" id="fname" name="fname" placeholder="Search here...">
-                <input class="lnm" id="search" type="submit" value="Search">
-            </form>
-        </div>
-  </header>
-  <!-- Reasearch Materials and Project Topics section -->
-   <section class="research">
-        <h1>RESEARCH MATERIALS AND PROJECT TOPICS FOR UNDERGRADUATES</h1>
-        <div class="line-two"></div>
-            <table>   
-                <p>Discover comprehensive <b><a href="#">research materials</a></b> and <b><a href="#">project topics</a></b> for every academic level and discipline.
-                    We offer academic writing services for 
-                    projects, research analyses, term papers, theses, proposals, dissertations, journals, assignments, and more.
-                </p>
-            </table>
-            <hr>
-        <h1>HOW TO TALK TO A RESEARCH CONSULTANT/ DATA ANALYST</h1>
-        <div class="line-two"></div>
-            <table style="margin-bottom: 20px;">
-                <ul>
-                    <li>First register to become a student partner</li>
-                    <li>After registration click on talk to a consultant/data analyst</li>
-                    <li>Fill in your details and purpose</li>
-                    <li>Click on submit and wait for 24 hours a consultant will reach out to you on the channel you entered</li>
-                </ul>
-            </table><hr>
-            <span class="needHelp">
-                <h1>NEED HELP? CHAT WITH US!</h1>
-                <h3><a href="https://wa.me/2348083193505">+234 808 319 3505</a></h3>
-                <h3><a href="https://wa.me/2348083193505">+234 808 319 3505</a></h3>
-            </span>
-   </section>
-   <!-- ======Explore Project Materials Section -->
-    <section class="explore">
-        <div class="header-content-two">
-            <h1>Explore project materials by departments</h1>
-            <div class="line"></div>
-        </div>
-        <div class="row">
-            <div class="col first-col">
-                <ul>
-                    <li><a class="#" href="department.html">Accounting</a></li>
-                    <li><a class="#" href="">Adult Education</a></li>
-                    <li><a class="#" href="">Agricultural Science</a></li>
-                    <li><a class="#" href="">Banking and Finance</a></li>
-                    <li><a class="#" href="">Biochemistry</a></li>
-                    <li><a class="#" href="">Business Administration</a></li>
-                    <li><a class="#" href="">Computer Science</a></li>
-                    <li><a class="#" href="department.html">Chemical Engineering</a></li>
-                    <li><a class="#" href="">Chemistry</a></li>
-                </ul>
+        <div class="menuIcon" style="font-size:25px;cursor:pointer">☰</div>
+    </nav>
+    <div class="line"></div>
+    <header>
+        <div class="roww first-roww">
+            <div class="coll">
+                <h1>Welcome To ProjectScope</h1>
+                <div class="short-line"></div>
+                <h2>Innovative Online Platform For Managing Research Projects</h2>
+                <h3>SEARCH FOR YOUR PROJECT TOPIC:</h3>
+                <form action="#">
+                    <input id="ent-pro-tit" type="text" id="fname" name="fname" placeholder="Enter project title">
+                    <input class="search-btn" id="search" type="submit" value="Search">
+                    
+                </form>
             </div>
-            <div class="col">
-                <ul>
-                    <li><a class="" href="">Economics</a></li>
-                    <li><a class="" href="">Electrical & Electronics Engineering</a></li>
-                    <li><a class="" href="">English</a></li>
-                    <li><a class="" href="">Food Engineering</a></li>
-                    <li><a class="" href="">Geography</a></li>
-                    <li><a class="" href="">Geology</a></li>
-                    <li><a class="" href="">Human Kinetics</a></li>
-                    <li><a class="" href="">Industrial Chemistry</a></li>
-                    <li><a class="" href="">International Relations</a></li>
-                </ul>
+            <div class="coll">
+                <div class="image-grid">
+                    <img class="img" src="college-student-with-curly-hair-bristle-looking-concentrated-while-reading-something-important-book-holding-pen-chin-hard-working-man-being-involved-studying-working-hard-all-day (2).jpg" alt="">
+                    <img class="img" src="college-student-with-curly-hair-bristle-looking-concentrated-while-reading-something-important-book-holding-pen-chin-hard-working-man-being-involved-studying-working-hard-all-day (2).jpg" alt="">
+                    <img class="img" src="college-student-with-curly-hair-bristle-looking-concentrated-while-reading-something-important-book-holding-pen-chin-hard-working-man-being-involved-studying-working-hard-all-day (2).jpg" alt="">
+                    <img class="img" src="college-student-with-curly-hair-bristle-looking-concentrated-while-reading-something-important-book-holding-pen-chin-hard-working-man-being-involved-studying-working-hard-all-day (2).jpg" alt="">
+                </div>
+                <!-- image to display for small screen size -->
+                 <div class="image-grid-two"> <img class="img" src="college-student-with-curly-hair-bristle-looking-concentrated-while-reading-something-important-book-holding-pen-chin-hard-working-man-being-involved-studying-working-hard-all-day (2).jpg" alt=""></div>
             </div>
-            <div class="col">
+        </div>
+    </header>
+    <!-- ======Explore projects by departments and Blog section -->
+    <section class="explore-pro" id="explore-pro">
+        <div class="roww sec-roww">
+            <div class="ex-pro-colls colls-one">
+                <h2>EXPLORE DEPARTMENTS</h2>
                 <ul>
-                    <li><a class="" href="">Law</a></li>
-                    <li><a class="" href="">Mass Communication</a></li>
-                    <li><a class="" href="">Micro Biology</a></li>
-                    <li><a class="" href="">Mathematics</a></li>
-                    <li><a class="" href="">Mechanical Engineering</a></li>
-                    <li><a class="" href="">Marine & Transport</a></li>
-                    <li><a class="" href="">Nursing</a></li>
-                    <li><a class="" href="">Political Science</a></li>
-                    <p><a href="#">More...</a></p>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Accounting</a></li>
+                </ul>
 
-                </ul>
             </div>
+            <!-- seccond column -->
+            <div class="ex-pro-colls colls-two">
+                <div class="ro">
+                    <h2>RESEARCH MATERIALS AND PROJECT TOPICS FOR UNDERGRADUATES</h2>
+                    <p>Discover comprehensive <b><a href="#">research materials</a></b> and <b><a href="#">project topics</a></b> for every academic level and discipline.
+                        We offer academic writing services for 
+                        projects, research analyses, term papers, theses, proposals, dissertations, journals, assignments, and more.
+                    </p><hr>
+                    <table>
+                        <h2>HOW TO TALK TO A RESEARCH CONSULTANT/ DATA ANALYST</h2>
+                        <ul>
+                            <li class="lis">First register to become a student partner</li>
+                            <li class="lis">After registration click on talk to a consultant/data analyst</li>
+                            <li class="lis">Fill in your details and purpose</li>
+                            <li class="lis">Click on submit and wait for 24 hours a consultant will reach out to you on the channel you entered</li>
+                        </ul>
+                    </table><hr>
+                    <h2 id="nid_hep" class="nid-hep">NEED HELP? CHAT WITH US!</h2>
+                    <h3 id="nid_hep"><a href="https://wa.me/2348083193505">+234 808 319 3505</a></h3>
+                    <h3 id="nid_hep"><a href="https://wa.me/2348083193505">+234 808 319 3505</a></h3><hr>
+                </div>
+                <!-- Frequently Asked Questions -->
+                <div class="faq" id="faq">
+                    <h2>FREQUENTLY ASKED QUESTIONS</h2><hr>
+                    <h3>How do i choose a Good Project Topic</h3>
+                    <p><i class="fa-solid fa-pen"></i> Look for your department and select any project topic of your choice based on your area of interest</p><hr>
+                    <h3>Is it a complete research project or just materials?</h3>
+                    <p><i class="fa-solid fa-pen"></i> It is a Complete Research Project i.e Chapters 1-5 including Abstract, Table of Contents, Full References, Questionnaires / Secondary Data</p><hr>
+                    <h3>How do i get my complete project?</h3>
+                    <p><i class="fa-solid fa-pen"></i> Your Complete Project Material will be sent to your Email Address in Ms Word document format or PDF format.</p><hr>
+
+                </div>
+                
+                <!-- second ro for blog section-->
+                <div class="ro ro-two">
+                    <h2>RECENT BLOG POSTS</h2>
+                    <div class="blog-container" id="blog-container">
+                        <div class="blog-post">
+                          <h2 class="post-title">HOW TO CHOOSE A GOOD PROJECT TOPIC</h2>
+                          <p class="post-date">August 29, 2024</p>
+                          <div class="post-content">
+                            <p>The educational curriculum states that in order to be awarded a degree after the graduating, there is need to carry out a research in a field of study. Consequently, this is done at the final year level in all university institutions. A lot of students have challenge when it comes to choosing a research topic. This is as a result of the fact that they lack knowledge on the</p>
+                          </div>
+                          <hr>
+                          <div class="post-footer">
+                            <a href="#" class="read-more">Read More</a>
+                            <span class="views">👁️ 123</span>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </section>
-     <!-- Blog Post Section -->
-    <section class="blog">
-        <div class="blogPic"><img src="blog.jpg" class="blogPic" alt="blog-post"></div>
-        <div class="card">       
-            <h1 style="text-align: center;">BLOG POSTS</h1>
-            <div class="cont">
-                <h5 class="card-title">Topic</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi enim neque deleniti, 
-                    exercitationem repellendus, tenetur saepe esse, nulla fugit ea laudantium. 
-                    Exercitationem, blanditiis fugiat odio quaerat necessitatibus voluptate natus enim.
-                </p>
-                <a href="#">>Read more</a>
-            </div>  
-        </div>
-    </section>
-    <!-- =====Footer Section===== -->
-    <section class="footer">
-        <div class="footer-line"></div>
-        <p>Copyright infringement is not allowed here</p>
-        <div>
-            <a href="#" style="text-decoration: none;">Home</a><span class="abt1">|</span>
-            <a href="#" style="text-decoration: none;">About</a><span class="abt1">|</span>
-            <a href="#" style="text-decoration: none;">Hire a writer</a><span class="abt1">|</span>
-            <a href="#" style="text-decoration: none;">Terms</a><span class="abt1">|</span>
-            <a href="#" style="text-decoration: none;">Become a partner</a><span class="abt1">|</span>
-            <a href="#" style="text-decoration: none;">Project topics</a><span class="abt1">|</span>
-            <a href="#" style="text-decoration: none;">Faq</a><span class="abt1">|</span>
-            <a href="#" style="text-decoration: none;">Contact Us</a><span class="abt1">|</span>
-    
-        </div>
-        <hr>
-        <a href="https://www.freepik.com/free-photo/education-day-arrangement-with-graduation-cap_10752867.htm#fromView=search&page=1&position=40&uuid=89e3f4a9-6bf0-48b1-890e-e025e7b9c143">Image by freepik</a>
+
+    <!-- ======Footer Section -->   
+    <footer>
         <p>© 2024 ProjectScope</p>
-        <p>OSBORN ISRAEL</p>
-        
-    </section>
+    </footer>
+    
 
-
-
-
-    <script src="index.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

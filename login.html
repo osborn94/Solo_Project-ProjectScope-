@@ -3,119 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <!-- <link rel="stylesheet" href="login.css"> -->
+    <title>Log in</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
     <script src="https://kit.fontawesome.com/bd5ea8837d.js" crossorigin="anonymous"></script>
 </head>
-<div class="bodi">
-    <body>
-    <header>
-        <h1>Welcome to ProjectScope</h1>
-        <p>An innovative online platform for managing research projects</p>
-        <div class="btns">
-            <button class="btn" onclick="home()">Home</button>         
-            <span class="span1"><a href="#">Project Topics</a></span> 
-            <span class="span1"><a href="#">Blog</a></span>
-            <span class="span1"><a href="#">Faq</a></span> 
-            <span class="span1"><a href="#">Contact Us</a></span> 
-            <button class="btn" onclick="regPage()">Become a Partner</button>  
-            <button class="btn" onclick="hireWriter()">Hire a Writer</button>      
-        </div>
-    </header>
-         <!-- responsiveness nav block -->
-         <div id="bars">
-            <div><h1>ProjectScope</h1></div>
-            <div class="bars">
-            <!-- <i class="fa-solid fa-bars" onclick="faBars()" style="color: white;padding: 4px;"></i> -->
-            <div id="menuIcon" style="font-size:30px;cursor:pointer;color: white;">☰</div>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#">Home</a>
-                <a href="becomePartner.html">Become a Partner</a>
-                <a href="hireWriter.html">Hire a Writer</a>
-                <a href="">Project Topics</a>
-                <a href="">Blogs</a>
-                <a href="">Faq</a>
-                <a href="#">Contact Us</a>
-                <a href="login.html">Log in</a>
-              </div>
+<body>
+    <div class="container">
+    <nav class="navbar">
+        <h1 class="logo"><span class="logo-text">Project<span class="scope">Scope</span></span></h1>
+        <ul class="nav-links">
+            <li><a class="active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a class="nav-anchor" href="index.html#explore-pro"><i class="fa-solid fa-book"></i> Project Topics</a></li>
+            <li><a class="nav-anchor" href="index.html#blog-container"><i class="fa-solid fa-comment fa-rotate-270"></i> Blog</a></li>
+            <li><a class="nav-anchor" href="index.html#faq"><i class="fa-solid fa-question"></i> Faq</a></li>
+            <li><a class="nav-anchor" href="index.html#nid_hep"><i class="fa-solid fa-address-book"></i> Contact Us</a></li>
+            <li><a class="nav-anchor" href="becomePartner.html"><i class="fa-solid fa-handshake"></i> Become a Partner</a></li>
+            <li><a class="nav-anchor" href="hire_writer.html"><i class="fa-solid fa-pen-to-square"></i> Hire a Writer</a></li>
+            <li><a class="login-btn" href="login.html">Log in</a></li>
+        </ul>
+        <div class="menuIcon" style="font-size:25px;cursor:pointer">☰</div>
+    </nav>
+    <div class="line"></div>
+
+    <!-- Main login section -->
+    <section>
+        <h1>Log in</h1>
+        <form action="">
+            <input type="text" name="name" id="" placeholder="Username" required><br>
+            <input type="text" name="name" id="" placeholder="Enter password" required><br>
+
+            <p><a href="#">Forgot Password?</a></p>
+            <label for="keepSignedIn" class="label">Keep me logged in</label>
+            <input type="checkbox" id="keepSignedIn" name="keepSignedIn">
+
+            <div class="form-submit">
+                <input id="log-in" type="submit" value="LOG IN" class="">
             </div>
-        </div>
-        
-    <!-- responsiveness nav block ends here -->
-
-    <div id="logImg2" style="display: flex;height: 120vh;justify-content: space-between;">
-    <div class="container-form" style="text-align: center;width: 30%;margin-top: 35px;line-height: 35px;margin-left: 30px;">
-    <h1> Log in</h1>
-    <p style="padding: 20px;">Log in with your social media account or email</p>
-    
-    <div class="btn-login form-class">
-        <a href="" class="btn-social"><span><i class="fa-brands fa-facebook"></i></span>facebook</a>
-
-        <a href="" class="btn-social"><span><i class="fa-brands fa-x-twitter"></i></span>twitter</a>
-
-        <a href="" class="btn-social"><span> <i class="fa-brands fa-google-plus-g"></i></span>gmail</a>
-
-    </div>
-
-
-    <div class="divider">
-        <span class="divider-bg">Or</span>
-    </div>
-
-    <div class="form-main">
-        <form class="logfrm" action="" method="">
-
-    <div class="form-user">
-
-    <!-- <div class="user">
-    <i class="fa-solid fa-user"></i>
-    </div> -->
-<input id="userName" type="text" name="" placeholder="Username" required>
-</div>
-
-<div class="form-class">
-
-    <div class="password">
-    <!-- <i class="fa-solid fa-fingerprint"></i> -->
-    </div>
-    <input id="userName" type="password" name="" placeholder="Enter password" required>
-</div>
-<p><a href="#">Forgot Password?</a></p>
-<label for="keepSignedIn">Keep me logged in</label>
-<input type="checkbox" id="keepSignedIn" name="keepSignedIn">
-
-<div class="form-submit">
-    <input id="log-in" type="submit" value="LOG IN" class="btn-btn">
-</div>
-<p>Don't have an account? <a href="becomePartner.html">Sign up</a></p>
-
+            <p>Don't have an account? <a href="becomePartner.html">Sign up</a></p>
         </form>
-    </div>
+    </section>
 
-    </div>
-    <div class="logImg" style="width: 60%;"><img src="login photo.jpg" alt="" style="width: 100%;"></div>
+    <!-- ======Footer Section -->   
+    <footer>
+        <p>© 2024 ProjectScope</p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="hire_write.js"></script>
 </div>
-<!-- footer section -->
-<footer>
-    <div id="abt">
-   
-        <a href="#" style="text-decoration: none;">Home</a><span class="abt1">|</span>
-        <a href="#" style="text-decoration: none;">About</a><span class="abt1">|</span>
-        <a href="#" style="text-decoration: none;">Hire a writer</a><span class="abt1">|</span>
-        <a href="#" style="text-decoration: none;">Terms</a><span class="abt1">|</span>
-        <a href="#" style="text-decoration: none;">Become a partner</a><span class="abt1">|</span>
-        <a href="#" style="text-decoration: none;">Project topics</a><span class="abt1">|</span>
-        <a href="#" style="text-decoration: none;">Faq</a><span class="abt1">|</span>
-        <a href="#" style="text-decoration: none;">Contact Us</a><span class="abt1">|</span>
-
-      </div>
-
-      <hr>
-
-    <p>© 2024 ProjectScope</p>
-</footer>
-<script src="main.js"></script>
 </body>
-</div>
 </html>

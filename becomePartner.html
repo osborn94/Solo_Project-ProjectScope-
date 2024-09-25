@@ -3,86 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Become a Partner | ProjectScope</title>
+    <title>Become a Partner</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="becomePartner.css">
+    <script src="https://kit.fontawesome.com/bd5ea8837d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to ProjectScope</h1>
-        <p>An innovative online platform for managing research projects</p>
-        <div class="btns">
-            <button class="btn" onclick="home()">Home</button>         
-            <span class="span1"><a href="#">Project Topics</a></span> 
-            <span class="span1"><a href="#">Blog</a></span>
-            <span class="span1"><a href="#">Faq</a></span> 
-            <span class="span1"><a href="#">Contact Us</a></span> 
-            <button class="btn" onclick="regPage()">Become a Partner</button>  
-            <button class="btn" onclick="loginPage()">Hire a Writer</button>
-            <button class="btn" onclick="logIn() ">Log in</button>      
-        </div>
-    </header>
-     <!-- responsiveness nav block -->
-     <div id="bars">
-        <div><h1>ProjectScope</h1></div>
-        <div class="bars">
-        <!-- <i class="fa-solid fa-bars" onclick="faBars()" style="color: white;padding: 4px;"></i> -->
-        <div id="menuIcon" style="font-size:30px;cursor:pointer;color: white;">☰</div>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="becomePartner.html">Become a Partner</a>
-            <a href="hireWriter.html">Hire a Writer</a>
-            <a href="">Project Topics</a>
-            <a href="">Blogs</a>
-            <a href="">Faq</a>
-            <a href="#">Contact Us</a>
-            <a href="login.html">Log in</a>
-          </div>
-        </div>
-    </div>  
-<!-- responsiveness nav block ends here -->
- 
-    <div class="container" style="height: 100vh;">
-        <h1 class="bap">Become a Partner</h1>
-        <div class="container2">
-        <div class="student">
-            <img id="stu" src="graduate.jpg" alt="">
-            <h2 id="stp">Student Partner</h2>
-            <p id="stp-1">Create a profile as a Student partner to have access to free research materials</p>
-            <button class="btn-stu" id="stp-3" onclick="studentSignUp()">Sign up as a Student</button>
-            <p id="stp-4"><a href="#">Who is a student partner?</a></p>
-        </div>
-        <div class="consultant">
-            <img id="stu" src="consultant.jpg" alt="">
-            <h2 id="stp">Consultant</h2>
-            <p id="stp-1">Consultant partner 
-            provides expert opinion and render research services to clients</p>
-             
-            <button class="btn-con" id="stp-3" onclick="consultantSignUp()">Sign up as a Consultant</button>
-            <p id="stp-4"><a href="#">Who is a Consultant?</a></p>
+    <nav class="navbar">
+        <h1 class="logo"><span class="logo-text">Project<span class="scope">Scope</span></span></h1>
+        <ul class="nav-links">
+            <li><a class="active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a class="nav-anchor" href="index.html#explore-pro"><i class="fa-solid fa-book"></i> Project Topics</a></li>
+            <li><a class="nav-anchor" href="index.html#blog-container"><i class="fa-solid fa-comment fa-rotate-270"></i> Blog</a></li>
+            <li><a class="nav-anchor" href="index.html#faq"><i class="fa-solid fa-question"></i> Faq</a></li>
+            <li><a class="nav-anchor" href="index.html#nid_hep"><i class="fa-solid fa-address-book"></i> Contact Us</a></li>
+            <li><a class="nav-anchor" href="becomePartner.html"><i class="fa-solid fa-handshake"></i> Become a Partner</a></li>
+            <li><a class="nav-anchor" href="hire_writer.html"><i class="fa-solid fa-pen-to-square"></i> Hire a Writer</a></li>
+            <li><a class="login-btn" href="login.html">Log in</a></li>
+        </ul>
+        <div class="menuIcon" style="font-size:25px;cursor:pointer">☰</div>
+    </nav>
+    <div class="line"></div>
 
-        </div>
-    </div>
-    </div>
+    <!-- Become a Partner section -->
+    <section>
+        <h1>Become a Partner</h1>
+        <div class="stu-con">
+            <div class="stu">
+                <img id="stu" src="graduate.jpg" alt="">
+                <h3>Student Partner</h3>
+                <p>Create a profile as a Student partner to have access to free research materials</p>
+                <button class="btn-stu" onclick="studentSignUp()">Sign up as a Student</button>
+                <p><a href="#">Who is a student partner?</a></p>
+            </div>
 
+            <div class="con">
+                <img id="stu" src="consultant.jpg" alt="">
+                <h3>Consultant</h3>
+                <p>Consultant partner 
+                provides expert opinion and render research services to clients</p>
+                <button class="btn-con" onclick="consultantSignUp()">Sign up as a Consultant</button>
+                <p><a href="#">Who is a Consultant?</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======Footer Section -->   
     <footer>
-        <div id="abt">
-       
-            <a href="#" style="text-decoration: none;">Home</a><span class="abt1">|</span>
-            <a href="#" style="text-decoration: none;">About</a><span class="abt1">|</span>
-            <a href="#" style="text-decoration: none;">Hire a writer</a><span class="abt1">|</span>
-            <a href="#" style="text-decoration: none;">Terms</a><span class="abt1">|</span>
-            <a href="#" style="text-decoration: none;">Become a partner</a><span class="abt1">|</span>
-            <a href="#" style="text-decoration: none;">Project topics</a><span class="abt1">|</span>
-            <a href="#" style="text-decoration: none;">Faq</a><span class="abt1">|</span>
-            <a href="#" style="text-decoration: none;">Contact Us</a><span class="abt1">|</span>
-    
-          </div>
-    
-          <hr>
-    
         <p>© 2024 ProjectScope</p>
     </footer>
-
     <script src="main.js"></script>
 </body>
 </html>
